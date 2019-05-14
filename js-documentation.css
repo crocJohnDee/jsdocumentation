@@ -1,0 +1,128 @@
+html{
+	height: 100%;
+	padding:0;
+}
+body {
+	background-color: rgb(249, 248, 224);
+	padding: 0;
+	height: 100%;
+	margin: 0;
+}
+
+p{
+	color:rgb(117, 117, 116);
+}
+
+li{
+	color:rgb(96, 96, 91);
+}
+
+h2{
+	color:rgb(45, 45, 44);
+}
+
+#main-doc{		
+	position: absolute;
+  	margin-left:300px;
+  	padding:20px;
+  	margin-bottom:110px;
+}
+
+code{
+  display:block;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:rgb(30,30,30);
+  padding:15px;
+  margin:10px;
+}
+/*nav{
+	background: blue;
+	height: 100%;
+	width: 20%;
+}*/
+.nav-head{
+	width: 100%;	
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color:rgb(45, 45, 44);
+}
+
+#navbar{
+	position:fixed;
+  	top:0px;
+  	left:0px;
+  	width:300px;
+  	height:100%;
+  	border-right:2px solid rgb(45, 45, 44);
+  	border-color:rgba(0,22,22,0.4);
+    top: 0;
+    left: 0;
+    background-color: rgb(249, 248, 224);
+    padding-top: 0;
+}
+
+.navitem a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: rgb(45, 45, 44);
+    font-size: 21px;
+    display: block;
+}
+
+.navitem:nth-child(2n) {
+    background: rgb(200, 200, 200);
+}
+
+.navitem a:hover {
+    color: rgb(45, 45, 44);
+    transition: 300ms;
+}
+
+section{
+			color: 	white;
+}
+
+@media only screen and (max-width: 680px) {
+    /* For mobile phones: */
+      #navbar ul{
+    	height:207px;
+  	}
+    #navbar{
+    	position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      height:345px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid rgb(45, 45, 44);
+    }
+
+    .nav-head{
+	width: 100%;
+	font-size: 0.7em;
+	height: 20px;
+	line-height: 3px;	
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color:rgb(249, 248, 224);
+}
+  	.navitem a {
+    	padding: 3px 0 3px 10px;
+    	font-size: 14px;
+    	letter-spacing: 3px;
+  	}
+	#main-doc{		
+		position: relative;
+    margin-left:0px;
+    margin-top:345px;
+	}
+}
